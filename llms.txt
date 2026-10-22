@@ -1,0 +1,5 @@
+# RozTools — Everyday Tools
+> 20+ free everyday browser tools: unit converter, age calculator, color picker, password generator, QR code maker, stopwatch, countdown, BMI and more. Everything runs locally in the browser. Free, no sign-up.
+
+- Home: https://khuramshahzadmarar10-afk.github.io/everyday-tools-2/
+- Sitemap: https://khuramshahzadmarar10-afk.github.io/everyday-tools-2/sitemap.xml
