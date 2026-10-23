@@ -1,0 +1,1176 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="color-scheme" content="light dark" />
+  <meta name="description" content="Use a free online unit converter, exact age calculator, HEX and RGB color picker, and JSON formatter, validator and minifier on any device." />
+  <meta name="keywords" content="free online tools, unit converter, length converter, weight converter, temperature converter, exact age calculator, color picker, HEX color code, RGB color code, JSON formatter, JSON validator, JSON minifier, browser tools" />
+  <link rel="canonical" href="https://khuramshahzadmarar10-afk.github.io/everyday-tools-2/" />
+  <meta property="og:title" content="Unit Converter, Age Calculator, Color Picker &amp; JSON Formatter" />
+  <meta property="og:description" content="Use a free unit converter, exact age calculator, HEX and RGB color picker, and JSON formatter, validator and minifier on any device." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://khuramshahzadmarar10-afk.github.io/everyday-tools-2/" />
+  <meta property="og:image" content="https://khuramshahzadmarar10-afk.github.io/everyday-tools-2/assets/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Unit Converter, Age Calculator, Color Picker &amp; JSON Formatter" />
+  <meta name="twitter:description" content="Use a free unit converter, exact age calculator, HEX and RGB color picker, and JSON formatter, validator and minifier on any device." />
+  <meta name="twitter:image" content="https://khuramshahzadmarar10-afk.github.io/everyday-tools-2/assets/og-image.png" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Everyday Tools 2",
+      "url": "https://khuramshahzadmarar10-afk.github.io/everyday-tools-2/",
+      "description": "Free online tools including a unit converter for length, weight and temperature, an exact age calculator, a HEX and RGB color picker, and a JSON formatter, validator and minifier.",
+      "applicationCategory": "UtilitiesApplication",
+      "operatingSystem": "Any",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    }
+  </script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Are these tools free to use?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. All four tools can be used without creating an account or paying a fee."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What information leaves my browser?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Your unit values, birth date, colors, and JSON inputs stay in your browser and are not sent to us. Google Analytics does receive usage data about page visits and interactions."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does the age calculator handle leap years?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It compares full calendar dates rather than dividing the day count by 365, so month length and leap-year differences are included."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What JSON can the formatter validate?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It accepts valid standard JSON: objects, arrays, strings, numbers, booleans, and null. Comments, trailing commas, and single-quoted keys are not valid JSON."
+          }
+        }
+      ]
+    }
+  </script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z831N98DBF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-Z831N98DBF');
+  </script>
+  <link rel="icon" href="data:," />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <title>RozTools: Unit Converter, Age Calculator &amp; Color Picker</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f4f8f7;
+      --paper: #fbfdfc;
+      --paper-strong: #ffffff;
+      --ink: #102a28;
+      --muted: #536966;
+      --line: #d5e1de;
+      --line-strong: #aec4bf;
+      --accent: #09856f;
+      --accent-dark: #056451;
+      --accent-soft: #d9f2eb;
+      --sun: #ffc95c;
+      --sun-soft: #fff2c9;
+      --danger: #b33a2b;
+      --danger-soft: #fde5df;
+      --success: #14765c;
+      --hero-start: #0c3435;
+      --hero-mid: #087963;
+      --hero-end: #31a68b;
+      --shadow: 0 24px 60px rgba(15, 58, 51, .12);
+      --shadow-soft: 0 12px 32px rgba(15, 58, 51, .08);
+      --radius-lg: 28px;
+      --radius-md: 16px;
+      --radius-sm: 10px;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0c1514;
+        --paper: #14211f;
+        --paper-strong: #1a2926;
+        --ink: #f2f8f6;
+        --muted: #b1c3bf;
+        --line: #304640;
+        --line-strong: #4e6861;
+        --accent: #50d0b4;
+        --accent-dark: #8ce4d0;
+        --accent-soft: #173d35;
+        --sun: #f2c360;
+        --sun-soft: #40351d;
+        --danger: #ff8979;
+        --danger-soft: #43231f;
+        --success: #65d1b0;
+        --hero-start: #071e20;
+        --hero-mid: #075d52;
+        --hero-end: #137d6b;
+        --shadow: 0 24px 64px rgba(0, 0, 0, .34);
+        --shadow-soft: 0 12px 34px rgba(0, 0, 0, .22);
+      }
+    }
+
+    @media (prefers-color-scheme: dark) {
+      .hero-board { background: rgba(17, 34, 31, .91); border-color: rgba(255,255,255,.18); }
+      .tool-card:nth-child(3) .card-icon { background: #302f5b; color: #c4c0ff; }
+      .tool-card:nth-child(4) .card-icon { background: #203946; color: #91c9e3; }
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      min-width: 320px;
+      background:
+        radial-gradient(circle at 12% 8%, color-mix(in srgb, var(--accent-soft) 52%, transparent), transparent 26rem),
+        radial-gradient(circle at 88% 36%, color-mix(in srgb, var(--sun-soft) 38%, transparent), transparent 23rem),
+        var(--bg);
+      color: var(--ink);
+      font-family: "Manrope", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.55;
+    }
+    button, input, select, textarea { font: inherit; }
+    button, a { -webkit-tap-highlight-color: transparent; }
+    a { color: inherit; }
+
+    .shell { width: min(1120px, calc(100% - 36px)); margin: 0 auto; }
+
+    .topnav {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 8px;
+      padding: 18px 0;
+    }
+    .topnav a {
+      color: var(--muted);
+      font-size: .9rem;
+      font-weight: 700;
+      text-decoration: none;
+      padding: 8px 11px;
+      border-radius: 999px;
+    }
+    .topnav a:hover, .topnav a:focus-visible { color: var(--ink); background: var(--paper); box-shadow: 0 7px 18px rgba(15, 58, 51, .08); outline: none; }
+
+    .hero {
+      position: relative;
+      isolation: isolate;
+      display: grid;
+      grid-template-columns: minmax(0, 1.15fr) minmax(280px, .85fr);
+      gap: 56px;
+      align-items: center;
+      margin-top: 10px;
+      padding: 72px clamp(28px, 5vw, 64px);
+      border: 1px solid rgba(255, 255, 255, .14);
+      border-radius: 34px;
+      overflow: hidden;
+      color: #f7fffd;
+      background: linear-gradient(135deg, var(--hero-start) 0%, var(--hero-mid) 56%, var(--hero-end) 100%);
+      box-shadow: 0 32px 80px rgba(5, 82, 69, .24);
+    }
+    .hero::before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      width: 420px;
+      height: 420px;
+      right: -150px;
+      top: -225px;
+      border-radius: 50%;
+      border: 72px solid rgba(255, 255, 255, .07);
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      inset: auto 30% -140px -100px;
+      height: 230px;
+      border-radius: 50%;
+      background: rgba(255, 203, 92, .10);
+      filter: blur(2px);
+      transform: rotate(-9deg);
+    }
+    .hero h1 {
+      margin: 0;
+      max-width: 720px;
+      font-family: "DM Serif Display", Georgia, "Times New Roman", serif;
+      font-size: clamp(3.4rem, 7vw, 6.9rem);
+      line-height: .91;
+      font-weight: 400;
+      letter-spacing: -.045em;
+      text-wrap: balance;
+    }
+    .hero h1 em { color: #ffe08f; font-style: italic; }
+    .hero p {
+      max-width: 590px;
+      margin: 27px 0 32px;
+      color: rgba(245, 255, 252, .82);
+      font-size: clamp(1rem, 2vw, 1.16rem);
+      line-height: 1.7;
+    }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      border: 1px solid transparent;
+      border-radius: 12px;
+      padding: 12px 18px;
+      font-weight: 800;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background .2s ease, color .2s ease, border-color .2s ease, transform .2s ease;
+    }
+    .button.primary { background: var(--accent); color: #fff; box-shadow: 0 10px 24px color-mix(in srgb, var(--accent) 28%, transparent); }
+    .button.primary:hover { background: var(--accent-dark); transform: translateY(-2px); box-shadow: 0 14px 30px color-mix(in srgb, var(--accent) 34%, transparent); }
+    .button.secondary { background: var(--paper); color: var(--ink); border-color: var(--line); }
+    .button.secondary:hover { border-color: var(--accent); color: var(--accent-dark); transform: translateY(-2px); }
+    .hero .button.primary { background: #fff; color: #075d52; box-shadow: 0 12px 28px rgba(0, 25, 22, .20); }
+    .hero .button.primary:hover { background: #fff5d8; color: #064f46; }
+    .hero .button.secondary { background: rgba(255, 255, 255, .10); color: #fff; border-color: rgba(255, 255, 255, .32); backdrop-filter: blur(8px); }
+    .hero .button.secondary:hover { background: rgba(255, 255, 255, .17); border-color: rgba(255, 255, 255, .56); color: #fff; }
+    .button:active { transform: translateY(1px); }
+    .button:focus-visible, .tool-card:focus-visible, .tab:focus-visible, summary:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
+      outline: 3px solid color-mix(in srgb, var(--sun) 75%, transparent);
+      outline-offset: 2px;
+    }
+
+    .hero-board {
+      position: relative;
+      min-height: 340px;
+      border: 1px solid rgba(255, 255, 255, .52);
+      border-radius: 30px;
+      background: rgba(255, 255, 255, .91);
+      box-shadow: 0 26px 52px rgba(0, 38, 32, .24);
+      backdrop-filter: blur(12px);
+      overflow: hidden;
+    }
+    .hero-board::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: repeating-linear-gradient(0deg, transparent 0 47px, color-mix(in srgb, var(--line) 50%, transparent) 48px 49px);
+    }
+    .board-stamp {
+      position: absolute;
+      top: 28px;
+      right: 26px;
+      width: 82px;
+      height: 82px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      background: var(--sun);
+      color: #2c250f;
+      font-size: .73rem;
+      line-height: 1.05;
+      font-weight: 900;
+      letter-spacing: .05em;
+      transform: rotate(8deg);
+    }
+    .board-stack { position: absolute; left: 28px; right: 28px; bottom: 28px; display: grid; gap: 12px; }
+    .mini-row {
+      display: grid;
+      grid-template-columns: 44px 1fr auto;
+      align-items: center;
+      gap: 13px;
+      padding: 12px;
+      background: var(--paper-strong);
+      border: 1px solid var(--line);
+      border-radius: 15px;
+      box-shadow: 0 10px 26px rgba(20, 35, 29, .12);
+    }
+    .mini-row:nth-child(2) { margin-left: 24px; }
+    .mini-row:nth-child(3) { margin-right: 18px; }
+    .mini-icon { width: 44px; height: 44px; display: grid; place-items: center; border-radius: 50%; background: var(--accent-soft); color: var(--accent-dark); }
+    .mini-icon svg { width: 22px; height: 22px; }
+    .mini-row strong { display: block; color: var(--ink); font-size: .95rem; }
+    .mini-row span { color: var(--muted); font-size: .78rem; }
+    .mini-row b { color: var(--accent-dark); font-size: .82rem; }
+
+    .section { padding: 78px 0; }
+    .ad-container {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      max-width: 100%;
+      margin: 20px auto;
+      overflow: hidden;
+    }
+    .section-head { display: flex; justify-content: space-between; gap: 24px; align-items: end; margin-bottom: 28px; }
+    .section-head h2 { margin: 0; font-family: "DM Serif Display", Georgia, "Times New Roman", serif; font-size: clamp(2.4rem, 5vw, 4.2rem); font-weight: 400; letter-spacing: -.035em; line-height: .98; }
+    .section-head p { max-width: 470px; margin: 0; color: var(--muted); line-height: 1.7; }
+
+    .tools-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
+    .tool-card {
+      appearance: none;
+      display: flex;
+      min-width: 0;
+      flex-direction: column;
+      align-items: flex-start;
+      min-height: 258px;
+      padding: 25px;
+      border: 1px solid color-mix(in srgb, var(--line) 82%, transparent);
+      border-radius: 24px;
+      background: linear-gradient(155deg, var(--paper-strong), var(--paper));
+      color: var(--ink);
+      text-align: left;
+      cursor: pointer;
+      box-shadow: var(--shadow-soft);
+      transition: border-color .3s ease, box-shadow .3s ease, transform .3s cubic-bezier(.2,.8,.2,1);
+    }
+    .tool-card:hover { border-color: color-mix(in srgb, var(--accent) 55%, var(--line)); box-shadow: 0 24px 48px rgba(15, 58, 51, .15); transform: translateY(-7px); }
+    .card-num { color: var(--muted); font-size: .75rem; font-weight: 900; letter-spacing: .12em; }
+    .card-icon { width: 58px; height: 58px; margin: 22px 0 20px; display: grid; place-items: center; border-radius: 18px; background: var(--sun-soft); color: var(--ink); box-shadow: inset 0 0 0 1px rgba(255,255,255,.52), 0 9px 22px rgba(90,70,20,.09); }
+    .tool-card:nth-child(2) .card-icon { background: var(--accent-soft); color: var(--accent-dark); }
+    .tool-card:nth-child(3) .card-icon { background: #e7e5ff; color: #4f48a0; }
+    .tool-card:nth-child(4) .card-icon { background: #e2edf7; color: #2f647d; }
+    .card-icon svg { width: 27px; height: 27px; stroke-width: 1.8; }
+    .tool-card h3 { margin: 0 0 8px; font-size: 1.18rem; letter-spacing: -.015em; }
+    .tool-card p { margin: 0; color: var(--muted); font-size: .9rem; line-height: 1.6; }
+    .open-label { display: inline-flex; align-items: center; gap: 5px; margin-top: auto; padding-top: 20px; color: var(--accent-dark); font-size: .84rem; font-weight: 900; transition: gap .2s ease; }
+    .tool-card:hover .open-label { gap: 9px; }
+
+    .workbench { padding-top: 40px; }
+    .toolbox {
+      border: 1px solid color-mix(in srgb, var(--line) 84%, transparent);
+      border-radius: 28px;
+      background: var(--paper);
+      box-shadow: 0 28px 70px rgba(15, 58, 51, .14);
+      overflow: hidden;
+    }
+    .tabs {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      border-bottom: 1px solid var(--line);
+      background: color-mix(in srgb, var(--bg) 70%, var(--paper));
+    }
+    .tab {
+      position: relative;
+      appearance: none;
+      border: 0;
+      border-right: 1px solid var(--line);
+      padding: 17px 10px;
+      background: transparent;
+      color: var(--muted);
+      font-size: .88rem;
+      font-weight: 800;
+      cursor: pointer;
+    }
+    .tab:last-child { border-right: 0; }
+    .tab[aria-selected="true"] { color: var(--accent-dark); background: var(--paper); }
+    .tab[aria-selected="true"]::after { content: ""; position: absolute; left: 24%; right: 24%; bottom: -1px; height: 3px; background: var(--accent); }
+    .panel { display: none; padding: clamp(24px, 5vw, 48px); }
+    .panel.active { display: block; }
+    .panel-title { display: flex; gap: 16px; align-items: flex-start; margin-bottom: 30px; }
+    .panel-title .index { display: grid; place-items: center; flex: 0 0 42px; width: 42px; height: 42px; border-radius: 50%; background: var(--accent); color: #fff; font-weight: 900; }
+    .panel-title h2 { margin: 0 0 4px; font-family: "DM Serif Display", Georgia, "Times New Roman", serif; font-size: clamp(2rem, 4vw, 3rem); font-weight: 400; line-height: 1.05; letter-spacing: -.025em; }
+    .panel-title p { margin: 0; color: var(--muted); }
+
+    .field-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+    .field { display: grid; gap: 8px; min-width: 0; }
+    .field.span-2 { grid-column: 1 / -1; }
+    label { color: var(--muted); font-size: .82rem; font-weight: 800; }
+    input, select, textarea {
+      width: 100%;
+      min-height: 48px;
+      border: 1px solid var(--line-strong);
+      border-radius: var(--radius-sm);
+      padding: 11px 13px;
+      background: var(--paper-strong);
+      color: var(--ink);
+      transition: border-color .2s ease, box-shadow .2s ease, background .2s ease;
+    }
+    input:hover, select:hover, textarea:hover { border-color: color-mix(in srgb, var(--accent) 48%, var(--line-strong)); }
+    input:focus, select:focus, textarea:focus { border-color: var(--accent); box-shadow: 0 0 0 4px color-mix(in srgb, var(--accent) 12%, transparent); }
+    textarea { min-height: 250px; resize: vertical; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: .9rem; line-height: 1.55; tab-size: 2; }
+    input::placeholder, textarea::placeholder { color: color-mix(in srgb, var(--muted) 76%, transparent); }
+    .segmented { display: flex; gap: 8px; flex-wrap: wrap; }
+    .segment {
+      appearance: none; border: 1px solid var(--line); background: var(--paper-strong); color: var(--muted); border-radius: 999px; padding: 8px 14px; font-size: .84rem; font-weight: 800; cursor: pointer;
+    }
+    .segment.active { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+    .convert-grid { display: grid; grid-template-columns: 1fr 48px 1fr; gap: 14px; align-items: end; margin-top: 20px; }
+    .swap { width: 48px; height: 48px; border-radius: 50%; border: 1px solid var(--line); background: var(--paper-strong); color: var(--accent-dark); cursor: pointer; font-size: 1.2rem; }
+    .result-box { margin-top: 20px; padding: 22px; background: var(--accent-soft); border-radius: 14px 14px 14px 4px; }
+    .result-label { color: var(--muted); font-size: .78rem; font-weight: 800; }
+    .result-value { margin-top: 3px; color: var(--accent-dark); font-family: "DM Serif Display", Georgia, "Times New Roman", serif; font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 400; word-break: break-word; }
+    .helper { margin: 10px 0 0; color: var(--muted); font-size: .86rem; }
+
+    .age-form { display: grid; grid-template-columns: minmax(220px, 1fr) auto; gap: 14px; align-items: end; }
+    .age-results { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 24px; }
+    .age-stat { padding: 20px; background: var(--accent-soft); border-radius: 6px 18px 18px 18px; }
+    .age-stat strong { display: block; color: var(--accent-dark); font-family: "DM Serif Display", Georgia, "Times New Roman", serif; font-size: clamp(2rem, 6vw, 3.5rem); font-weight: 400; line-height: 1; }
+    .age-stat span { color: var(--muted); font-size: .84rem; font-weight: 800; }
+    .age-note { margin-top: 13px; color: var(--muted); font-size: .88rem; }
+
+    .color-layout { display: grid; grid-template-columns: minmax(180px, .72fr) 1.28fr; gap: 28px; align-items: stretch; }
+    .color-preview { position: relative; min-height: 285px; border: 1px solid var(--line); border-radius: 8px 28px 28px 28px; overflow: hidden; background: #0f8b72; }
+    .color-preview input[type="color"] { position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0; cursor: pointer; }
+    .preview-hint { position: absolute; inset: auto 18px 18px; pointer-events: none; display: inline-flex; justify-content: center; padding: 9px 13px; border-radius: 999px; background: rgba(0,0,0,.68); color: #fff; font-size: .8rem; font-weight: 800; }
+    .codes { display: grid; align-content: center; gap: 11px; }
+    .code-row { display: grid; grid-template-columns: 1fr auto; gap: 9px; }
+    .copy-btn { border: 1px solid var(--line); border-radius: 10px; padding: 0 16px; background: var(--paper-strong); color: var(--accent-dark); font-weight: 900; cursor: pointer; }
+    .copy-btn:hover { border-color: var(--accent); }
+    .copy-note { min-height: 22px; color: var(--success); font-size: .82rem; font-weight: 800; }
+
+    .json-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+    .editor-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 8px; }
+    .editor-head label { color: var(--ink); }
+    .tiny-btn { border: 0; padding: 4px 0; background: transparent; color: var(--accent-dark); font-size: .79rem; font-weight: 900; cursor: pointer; }
+    .json-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 14px; }
+    .status { display: flex; align-items: flex-start; gap: 8px; min-height: 24px; margin-top: 12px; font-size: .86rem; font-weight: 750; }
+    .status.good { color: var(--success); }
+    .status.bad { color: var(--danger); }
+    .output-invalid { border-color: var(--danger) !important; background: var(--danger-soft); }
+
+    .tool-copy { padding: 0 clamp(24px, 5vw, 48px) 42px; }
+    .tool-copy-inner { border-top: 1px solid var(--line); padding-top: 25px; display: grid; grid-template-columns: 190px 1fr; gap: 28px; }
+    .tool-copy h3 { margin: 0; font-size: 1rem; }
+    .tool-copy p { margin: 0; color: var(--muted); }
+
+    .principles { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 34px 0; }
+    .principle { display: flex; gap: 13px; align-items: flex-start; }
+    .principle svg { width: 25px; height: 25px; flex: 0 0 25px; color: var(--accent); }
+    .principle strong { display: block; margin-bottom: 3px; }
+    .principle span { color: var(--muted); font-size: .88rem; }
+
+    .faq-list { max-width: 820px; }
+    .about-copy { max-width: 860px; color: var(--muted); }
+    .about-copy p { margin: 0 0 18px; line-height: 1.82; }
+    .about-copy p:last-child { margin-bottom: 0; }
+    details { border-top: 1px solid var(--line); }
+    details:last-child { border-bottom: 1px solid var(--line); }
+    summary { display: flex; justify-content: space-between; gap: 20px; align-items: center; padding: 21px 2px; cursor: pointer; font-weight: 850; list-style: none; }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "+"; width: 28px; height: 28px; display: grid; place-items: center; flex: 0 0 auto; border-radius: 50%; background: var(--accent-soft); color: var(--accent-dark); font-size: 1.2rem; }
+    details[open] summary::after { content: "−"; }
+    details p { margin: -4px 50px 22px 2px; color: var(--muted); }
+
+    footer { padding: 38px 0 calc(30px + env(safe-area-inset-bottom)); border-top: 1px solid var(--line); }
+    .footer-tools { padding-bottom: 34px; }
+    .footer-tools h2 { margin: 0 0 18px; font-family: "DM Serif Display", Georgia, "Times New Roman", serif; font-size: clamp(1.8rem, 3vw, 2.5rem); font-weight: 400; line-height: 1; letter-spacing: -.025em; }
+    .footer-tools-grid { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+    .footer-tool { min-width: 0; padding: 18px 22px 18px 0; color: var(--ink); text-decoration: none; }
+    .footer-tool:not(:nth-child(3n + 1)) { padding-left: 22px; border-left: 1px solid var(--line); }
+    .footer-tool:nth-child(n + 4) { border-top: 1px solid var(--line); }
+    .footer-tool strong { display: block; margin-bottom: 3px; font-size: .94rem; }
+    .footer-tool span { display: block; color: var(--muted); font-size: .8rem; line-height: 1.5; }
+    .footer-tool:hover strong, .footer-tool:focus-visible strong { color: var(--accent-dark); }
+    .footer-tool:focus-visible { outline: 3px solid color-mix(in srgb, var(--sun) 75%, transparent); outline-offset: -3px; }
+    .footer-row { display: flex; justify-content: space-between; gap: 20px; color: var(--muted); font-size: .84rem; }
+    .footer-row nav { display: flex; flex-wrap: wrap; gap: 16px; }
+    .footer-row a { text-decoration: none; }
+    .footer-row a:hover { color: var(--accent-dark); }
+
+    .legal-page { min-height: calc(100vh - 98px); padding: clamp(34px, 7vw, 82px) 0 90px; }
+    .legal-page[hidden] { display: none; }
+    .legal-back { display: inline-flex; align-items: center; gap: 8px; margin-bottom: 32px; color: var(--accent-dark); font-size: .9rem; font-weight: 850; text-decoration: none; }
+    .legal-back:hover { text-decoration: underline; text-underline-offset: 4px; }
+    .legal-layout { display: grid; grid-template-columns: minmax(0, .68fr) minmax(0, 1.32fr); gap: clamp(36px, 7vw, 92px); align-items: start; }
+    .legal-heading { position: sticky; top: 28px; }
+    .legal-heading .label { display: inline-block; margin-bottom: 14px; color: var(--accent-dark); font-size: .76rem; font-weight: 900; letter-spacing: .08em; text-transform: uppercase; }
+    .legal-heading h2 { margin: 0; max-width: 520px; font-family: "DM Serif Display", Georgia, "Times New Roman", serif; font-size: clamp(3rem, 7vw, 5.8rem); font-weight: 400; letter-spacing: -.045em; line-height: .94; }
+    .legal-heading p { max-width: 430px; margin: 22px 0 0; color: var(--muted); line-height: 1.75; }
+    .legal-copy { padding: clamp(24px, 4vw, 42px); border: 1px solid var(--line); border-radius: 8px 28px 28px 28px; background: var(--paper); box-shadow: var(--shadow-soft); }
+    .legal-copy h2 { margin: 34px 0 9px; color: var(--ink); font-size: 1.15rem; line-height: 1.35; }
+    .legal-copy h2:first-child { margin-top: 0; }
+    .legal-copy p, .legal-copy li { color: var(--muted); line-height: 1.75; }
+    .legal-copy p { margin: 0 0 14px; }
+    .legal-copy ul { margin: 8px 0 0; padding-left: 20px; }
+    .legal-copy a { color: var(--accent-dark); font-weight: 800; text-underline-offset: 3px; }
+    .policy-note { margin: 26px 0 0; padding: 18px 20px; border-radius: 4px 16px 16px 16px; background: var(--accent-soft); color: var(--accent-dark) !important; font-weight: 750; }
+
+    .toast { position: fixed; left: 50%; bottom: 22px; transform: translate(-50%, 18px); z-index: 10; padding: 11px 16px; border-radius: 999px; background: var(--ink); color: var(--paper); font-size: .84rem; font-weight: 850; opacity: 0; pointer-events: none; transition: opacity .2s, transform .2s; }
+    .toast.show { opacity: 1; transform: translate(-50%, 0); }
+
+    .cookie-notice {
+      position: fixed;
+      z-index: 20;
+      left: 50%;
+      bottom: calc(18px + env(safe-area-inset-bottom));
+      width: min(620px, calc(100% - 28px));
+      transform: translateX(-50%);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      padding: 14px 15px 14px 19px;
+      border: 1px solid var(--line-strong);
+      border-radius: 16px;
+      background: var(--paper-strong);
+      color: var(--ink);
+      box-shadow: var(--shadow);
+    }
+    .cookie-notice p { margin: 0; font-size: .9rem; font-weight: 650; }
+    .cookie-notice button {
+      flex: 0 0 auto;
+      min-width: 58px;
+      min-height: 42px;
+      border: 0;
+      border-radius: 10px;
+      padding: 9px 15px;
+      background: var(--accent);
+      color: #fff;
+      font-weight: 850;
+      cursor: pointer;
+    }
+    .cookie-notice button:hover { background: var(--accent-dark); }
+    .cookie-notice button:focus-visible { outline: 3px solid color-mix(in srgb, var(--sun) 75%, transparent); outline-offset: 2px; }
+
+    @media (max-width: 900px) {
+      .hero { grid-template-columns: 1fr; gap: 38px; padding-top: 35px; }
+      .hero-board { min-height: 300px; max-width: 610px; width: 100%; }
+      .tools-grid { grid-template-columns: 1fr 1fr; }
+      .json-layout { grid-template-columns: 1fr; }
+      .principles { grid-template-columns: 1fr; gap: 22px; }
+    }
+
+    @media (max-width: 620px) {
+      .shell { width: min(100% - 24px, 1120px); }
+      .topnav { justify-content: center; padding: 10px 0; }
+      .topnav a { padding: 7px 8px; font-size: .78rem; }
+      .hero { margin-top: 4px; padding: 44px 22px 24px; border-radius: 24px; gap: 34px; }
+      .hero h1 { font-size: clamp(3rem, 16vw, 4.5rem); line-height: .92; }
+      .hero p { margin-top: 20px; }
+      .hero-actions .button { flex: 1; }
+      .hero-board { min-height: 0; height: auto; padding: 88px 14px 14px; border-radius: 22px; }
+      .board-stamp { width: 68px; height: 68px; top: 14px; right: 16px; font-size: .64rem; }
+      .board-stack { position: static; }
+      .mini-row:nth-child(2) { margin-left: 10px; }
+      .mini-row:nth-child(3) { margin-right: 7px; }
+      .section { padding: 54px 0; }
+      .section-head { display: block; }
+      .section-head p { margin-top: 12px; }
+      .tools-grid { grid-template-columns: 1fr; }
+      .tool-card { min-height: 220px; padding: 22px; }
+      .card-icon { margin: 16px 0 14px; }
+      .tabs { grid-template-columns: 1fr 1fr; }
+      .tab:nth-child(2) { border-right: 0; }
+      .tab:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
+      .tab[aria-selected="true"]::after { left: 30%; right: 30%; }
+      .panel { padding: 24px 18px 30px; }
+      .field-grid, .convert-grid, .age-form, .color-layout { grid-template-columns: 1fr; }
+      .field.span-2 { grid-column: auto; }
+      .swap { transform: rotate(90deg); justify-self: center; }
+      .age-form .button { width: 100%; }
+      .age-results { grid-template-columns: repeat(3, 1fr); }
+      .age-stat { padding: 15px 10px; text-align: center; }
+      .age-stat strong { font-size: 2.2rem; }
+      .color-preview { min-height: 220px; }
+      .code-row { grid-template-columns: minmax(0, 1fr) auto; }
+      .copy-btn { padding: 0 12px; }
+      .tool-copy { padding: 0 18px 30px; }
+      .tool-copy-inner { grid-template-columns: 1fr; gap: 8px; }
+      .legal-layout { grid-template-columns: 1fr; gap: 28px; }
+      .legal-heading { position: static; }
+      .legal-copy { padding: 24px 20px; border-radius: 6px 20px 20px 20px; }
+      .footer-tools-grid { grid-template-columns: 1fr; }
+      .footer-tool { padding: 16px 0; }
+      .footer-tool:not(:nth-child(3n + 1)) { padding-left: 0; border-left: 0; }
+      .footer-tool:nth-child(n + 2) { border-top: 1px solid var(--line); }
+      .footer-row { flex-direction: column; }
+    }
+
+    @media (prefers-color-scheme: dark) {
+      .hero-board { background: rgba(17, 34, 31, .94); border-color: rgba(255,255,255,.18); }
+      .tool-card:nth-child(3) .card-icon { background: #302f5b; color: #c4c0ff; }
+      .tool-card:nth-child(4) .card-icon { background: #203946; color: #91c9e3; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { transition: none !important; }
+    }
+  </style>
+</head>
+<body>
+  <div class="shell" id="homeHero">
+    <nav class="topnav" aria-label="Main navigation">
+      <a href="#tools">Tools</a>
+      <a href="#workbench">Workbench</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+
+    <header class="hero">
+      <div>
+        <h1>Free online tools.<br><em>Fast, clear answers.</em></h1>
+        <p>Use a unit converter, exact age calculator, HEX and RGB color picker, or JSON formatter online—without accounts, clutter, or waiting.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#workbench">Open the tools</a>
+          <a class="button secondary" href="#tools">See all four</a>
+        </div>
+      </div>
+      <div class="hero-board" aria-label="A preview of available utilities">
+        <div class="board-stamp">4 FREE<br>TOOLS</div>
+        <div class="board-stack">
+          <div class="mini-row">
+            <div class="mini-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M7 4v6M17 4v6M8 14h8M10 11v6M14 11v6"/></svg></div>
+            <div><strong>Unit Converter</strong><span>Length · Weight · Temperature</span></div><b>Instant</b>
+          </div>
+          <div class="mini-row">
+            <div class="mini-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+            <div><strong>Age Calculator</strong><span>Calendar-accurate difference</span></div><b>Exact</b>
+          </div>
+          <div class="mini-row">
+            <div class="mini-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3a9 9 0 1 0 9 9c0-1.1-.9-2-2-2h-2a2 2 0 0 1-2-2V6a3 3 0 0 0-3-3Z"/><circle cx="7.5" cy="11.5" r="1"/><circle cx="10" cy="7.5" r="1"/><circle cx="8.5" cy="16" r="1"/></svg></div>
+            <div><strong>Color &amp; Code Tools</strong><span>Pick, copy, format, validate</span></div><b>Local</b>
+          </div>
+        </div>
+      </div>
+    </header>
+  </div>
+
+  <main id="homeContent">
+    <section class="section shell" id="tools">
+      <div class="section-head">
+        <h2>Free Unit Converter, Age Calculator, Color Picker &amp; JSON Formatter</h2>
+        <p>Choose from four focused online utilities for everyday tasks. Convert measurements, calculate age, find color codes, or format JSON directly on this page.</p>
+      </div>
+      <div class="tools-grid">
+        <button class="tool-card" type="button" data-open="unit">
+          <span class="card-num">01</span>
+          <span class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M7 4v6M17 4v6M8 14h8M10 11v6M14 11v6"/></svg></span>
+          <h3>Unit Converter</h3><p>Move cleanly between common measurement units.</p><span class="open-label">Open tool →</span>
+        </button>
+        <button class="tool-card" type="button" data-open="age">
+          <span class="card-num">02</span>
+          <span class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+          <h3>Age Calculator</h3><p>Find a precise age in years, months, and days.</p><span class="open-label">Open tool →</span>
+        </button>
+        <button class="tool-card" type="button" data-open="color">
+          <span class="card-num">03</span>
+          <span class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3a9 9 0 1 0 9 9c0-1.1-.9-2-2-2h-2a2 2 0 0 1-2-2V6a3 3 0 0 0-3-3Z"/><circle cx="7.5" cy="11.5" r="1"/><circle cx="10" cy="7.5" r="1"/><circle cx="8.5" cy="16" r="1"/></svg></span>
+          <h3>Color Picker</h3><p>Choose a color and copy its HEX or RGB code.</p><span class="open-label">Open tool →</span>
+        </button>
+        <button class="tool-card" type="button" data-open="json">
+          <span class="card-num">04</span>
+          <span class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 3H6a2 2 0 0 0-2 2v3c0 2-1 3-2 3 1 0 2 1 2 3v5a2 2 0 0 0 2 2h2M16 3h2a2 2 0 0 1 2 2v3c0 2 1 3 2 3-1 0-2 1-2 3v5a2 2 0 0 1-2 2h-2"/></svg></span>
+          <h3>JSON Formatter</h3><p>Validate, beautify, or minify JSON text.</p><span class="open-label">Open tool →</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="section workbench" id="workbench">
+      <div class="shell toolbox">
+        <div class="tabs" role="tablist" aria-label="Tool selection">
+          <button class="tab" id="tab-unit" role="tab" aria-selected="true" aria-controls="panel-unit" data-tab="unit">Unit converter</button>
+          <button class="tab" id="tab-age" role="tab" aria-selected="false" aria-controls="panel-age" data-tab="age">Age calculator</button>
+          <button class="tab" id="tab-color" role="tab" aria-selected="false" aria-controls="panel-color" data-tab="color">Color picker</button>
+          <button class="tab" id="tab-json" role="tab" aria-selected="false" aria-controls="panel-json" data-tab="json">JSON formatter</button>
+        </div>
+
+        <section class="panel active" id="panel-unit" role="tabpanel" aria-labelledby="tab-unit">
+          <div class="panel-title"><span class="index">01</span><div><h2>Free Online Unit Converter</h2><p>Convert length, weight, and temperature units instantly, including meters, kilometers, miles, feet, kilograms, pounds, Celsius, Fahrenheit, and Kelvin.</p></div></div>
+          <div class="field">
+            <label>Measurement type</label>
+            <div class="segmented" id="unitCategories" role="group" aria-label="Measurement type">
+              <button class="segment active" type="button" data-category="length">Length</button>
+              <button class="segment" type="button" data-category="weight">Weight</button>
+              <button class="segment" type="button" data-category="temperature">Temperature</button>
+            </div>
+          </div>
+          <div class="convert-grid">
+            <div class="field"><label for="unitFromValue">From</label><input id="unitFromValue" type="number" inputmode="decimal" value="1" step="any"><select id="unitFrom" aria-label="Convert from unit"></select></div>
+            <button class="swap" id="swapUnits" type="button" aria-label="Swap units">⇄</button>
+            <div class="field"><label for="unitToValue">To</label><input id="unitToValue" type="text" readonly aria-live="polite"><select id="unitTo" aria-label="Convert to unit"></select></div>
+          </div>
+          <div class="result-box"><div class="result-label">Conversion</div><div class="result-value" id="unitResult">—</div></div>
+        </section>
+        <div class="tool-copy" id="copy-unit"><div class="tool-copy-inner"><h3>About this unit converter</h3><p>Use this free online unit converter for fast length, weight, and temperature conversions. Change meters to feet, kilometers to miles, kilograms to pounds, or Celsius to Fahrenheit while values update instantly in your browser.</p></div></div>
+
+        <section class="panel" id="panel-age" role="tabpanel" aria-labelledby="tab-age" hidden>
+          <div class="panel-title"><span class="index">02</span><div><h2>Exact Age Calculator</h2><p>Enter a date of birth to calculate an accurate age in complete years, months, and days, with month lengths and leap years handled correctly.</p></div></div>
+          <div class="age-form">
+            <div class="field"><label for="birthDate">Date of birth</label><input id="birthDate" type="date"></div>
+            <button class="button primary" id="calculateAge" type="button">Calculate age</button>
+          </div>
+          <div class="status bad" id="ageError" role="status"></div>
+          <div class="age-results" id="ageResults" hidden>
+            <div class="age-stat"><strong id="ageYears">0</strong><span>Years</span></div>
+            <div class="age-stat"><strong id="ageMonths">0</strong><span>Months</span></div>
+            <div class="age-stat"><strong id="ageDays">0</strong><span>Days</span></div>
+          </div>
+          <p class="age-note" id="ageNote"></p>
+        </section>
+        <div class="tool-copy" id="copy-age" hidden><div class="tool-copy-inner"><h3>About exact age calculation</h3><p>This free age calculator measures complete calendar years, months, and days from a date of birth to today. It accounts for different month lengths and leap years to provide a precise, calendar-accurate age result.</p></div></div>
+
+        <section class="panel" id="panel-color" role="tabpanel" aria-labelledby="tab-color" hidden>
+          <div class="panel-title"><span class="index">03</span><div><h2>Online HEX &amp; RGB Color Picker</h2><p>Choose any browser-supported color, preview it instantly, and copy the matching HEX color code or RGB value for web and graphic design.</p></div></div>
+          <div class="color-layout">
+            <div class="color-preview" id="colorPreview"><input id="nativeColor" type="color" value="#0f8b72" aria-label="Choose a color"><span class="preview-hint">Tap to choose a color</span></div>
+            <div class="codes">
+              <div class="field"><label for="hexCode">HEX</label><div class="code-row"><input id="hexCode" type="text" value="#0F8B72" maxlength="7" spellcheck="false"><button class="copy-btn" type="button" data-copy-target="hexCode">Copy</button></div></div>
+              <div class="field"><label for="rgbCode">RGB</label><div class="code-row"><input id="rgbCode" type="text" value="rgb(15, 139, 114)" readonly><button class="copy-btn" type="button" data-copy-target="rgbCode">Copy</button></div></div>
+              <div class="copy-note" id="copyNote" role="status"></div>
+            </div>
+          </div>
+        </section>
+        <div class="tool-copy" id="copy-color" hidden><div class="tool-copy-inner"><h3>About HEX and RGB color codes</h3><p>Pick any browser-supported color and get matching HEX and RGB values instantly. Copy-ready color codes make this online color picker useful for websites, CSS, graphics, branding, and digital design.</p></div></div>
+
+        <section class="panel" id="panel-json" role="tabpanel" aria-labelledby="tab-json" hidden>
+          <div class="panel-title"><span class="index">04</span><div><h2>Free JSON Formatter, Validator &amp; Minifier</h2><p>Paste JSON to check syntax, format nested data with readable indentation, or minify valid JSON for compact storage and transfer.</p></div></div>
+          <div class="json-layout">
+            <div>
+              <div class="editor-head"><label for="jsonInput">Input JSON</label><button class="tiny-btn" id="clearJson" type="button">Clear</button></div>
+              <textarea id="jsonInput" placeholder='{"name":"Sample","active":true}' spellcheck="false"></textarea>
+            </div>
+            <div>
+              <div class="editor-head"><label for="jsonOutput">Formatted output</label><button class="tiny-btn" id="copyJson" type="button">Copy output</button></div>
+              <textarea id="jsonOutput" placeholder="Your formatted JSON will appear here" readonly spellcheck="false"></textarea>
+            </div>
+          </div>
+          <div class="json-actions"><button class="button primary" id="formatJson" type="button">Format &amp; validate</button><button class="button secondary" id="minifyJson" type="button">Minify</button></div>
+          <div class="status" id="jsonStatus" role="status"></div>
+        </section>
+        <div class="tool-copy" id="copy-json" hidden><div class="tool-copy-inner"><h3>About JSON formatting and validation</h3><p>The free online JSON formatter checks syntax, adds readable indentation, and minifies valid JSON data. It is a quick browser-based JSON validator and minifier for developers, students, API testing, and debugging.</p></div></div>
+      </div>
+    </section>
+
+    <section class="section shell" aria-label="Product principles">
+      <div class="principles">
+        <div class="principle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3 4 7v5c0 5 3.5 8 8 9 4.5-1 8-4 8-9V7l-8-4Z"/><path d="m9 12 2 2 4-5"/></svg><div><strong>Privacy notice</strong><span>Tool inputs stay in your browser. Google Analytics receives usage data about visits and interactions.</span></div></div>
+        <div class="principle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m13 2-9 12h8l-1 8 9-12h-8l1-8Z"/></svg><div><strong>Built for speed</strong><span>No sign-up flow, account gate, or unnecessary screen between you and the answer.</span></div></div>
+        <div class="principle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h10"/></svg><div><strong>Easy to read</strong><span>Clear labels, useful defaults, keyboard access, and layouts that reflow on small screens.</span></div></div>
+      </div>
+    </section>
+
+    <section class="section shell" id="faq">
+      <div class="section-head"><h2>Frequently Asked Questions About Our Free Online Tools</h2><p>Quick answers about the unit converter, age calculator, color picker, and JSON formatter.</p></div>
+      <div class="faq-list">
+        <details><summary>Are these tools free to use?</summary><p>Yes. All four tools can be used without creating an account or paying a fee.</p></details>
+        <details><summary>What information leaves my browser?</summary><p>Your unit values, birth date, colors, and JSON inputs stay in your browser and are not sent to us. Google Analytics does receive usage data about page visits and interactions.</p></details>
+        <details><summary>How does the age calculator handle leap years?</summary><p>It compares full calendar dates rather than dividing the day count by 365, so month length and leap-year differences are included.</p></details>
+        <details><summary>What JSON can the formatter validate?</summary><p>It accepts valid standard JSON: objects, arrays, strings, numbers, booleans, and null. Comments, trailing commas, and single-quoted keys are not valid JSON.</p></details>
+      </div>
+    </section>
+
+    <section class="section shell" id="about-tools">
+      <div class="section-head">
+        <h2>About Our Free Everyday Online Tools</h2>
+        <p>Practical browser utilities designed to give useful answers quickly on phones, tablets, and computers.</p>
+      </div>
+      <div class="about-copy">
+        <p>Everyday Tools 2 brings four useful free online tools together in one focused workspace. Instead of installing software or creating an account, you can open the page and complete a common task right away. The website includes an online unit converter, an exact age calculator, a HEX and RGB color picker, and a JSON formatter, validator, and minifier. Each utility runs directly in your browser, uses clear labels, and adapts to both mobile and desktop screens. Whether you are checking a household measurement, planning around a date, preparing a website color, or reviewing structured data, the goal is the same: a fast result without unnecessary steps.</p>
+        <p>The free unit converter handles popular length, weight, and temperature conversions. It can convert meters, kilometers, centimeters, miles, yards, feet, and inches, as well as kilograms, grams, pounds, ounces, Celsius, Fahrenheit, and Kelvin. The exact age calculator compares complete calendar dates to calculate age in years, months, and days, accounting for different month lengths and leap years. These tools are useful for students, travelers, home projects, fitness records, forms, birthdays, anniversaries, and many other everyday calculations.</p>
+        <p>For design and development work, the online color picker provides copy-ready HEX color codes and RGB values from an interactive preview. It is useful for CSS, websites, digital graphics, branding, and other visual projects. The free JSON formatter turns compact JSON into readable, indented output, while the JSON validator identifies invalid syntax and the JSON minifier removes unnecessary spacing from valid data. Developers, learners, and anyone troubleshooting API data can use it without uploading JSON text to an Everyday Tools 2 server. Together, these browser-based utilities offer a simple, accessible destination for unit conversion, age calculation, color codes, JSON formatting, validation, and minification.</p>
+      </div>
+    </section>
+  </main>
+
+  <article class="legal-page" id="page-privacy" data-page="privacy" hidden>
+    <div class="shell">
+      <a class="legal-back" href="#tools" data-home-link>← Back to all tools</a>
+      <div class="legal-layout">
+        <header class="legal-heading">
+          <span class="label">Your data, explained</span>
+          <h2>Privacy Policy</h2>
+          <p>How Everyday Tools 2 handles tool inputs, site analytics, and cookies.</p>
+        </header>
+        <div class="legal-copy">
+          <h2>Tool inputs stay in your browser</h2>
+          <p>The values you enter into the Unit Converter, Age Calculator, Color Picker, and JSON Formatter are processed 100% inside your browser. They are not uploaded to us or stored on a server by Everyday Tools 2.</p>
+          <p>This includes measurements, dates of birth, color codes, and JSON text. Closing or refreshing the page clears any unsaved tool input from the current page session.</p>
+
+          <h2>Google Analytics</h2>
+          <p>We use Google Analytics to understand how people find and use this website. Google Analytics may send site-usage data to Google, such as pages viewed, approximate location derived from an IP address, device and browser information, session activity, and interactions with the site.</p>
+          <p>That analytics data helps us improve performance and decide which utilities are most useful. Google handles this information under its own privacy terms and data practices.</p>
+
+          <h2>Cookies and similar technologies</h2>
+          <p>Google Analytics may use cookies or similar browser technologies to distinguish visits, measure usage, and produce aggregated reports. Your browser settings may let you block or delete cookies. Blocking analytics cookies should not prevent the four tools from working because their calculations run locally in your browser.</p>
+
+          <h2>Third-party links</h2>
+          <p>This website may link to third-party websites. Their privacy practices are controlled by those services, not by Everyday Tools 2.</p>
+
+          <h2>Contact</h2>
+          <p>For privacy questions, contact the project owner through <a href="https://github.com/khuramshahzadmarar10-afk" target="_blank" rel="noopener noreferrer">GitHub</a>.</p>
+          <p class="policy-note">In short: your tool inputs stay local; Google Analytics receives website usage data.</p>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <article class="legal-page" id="page-about" data-page="about" hidden>
+    <div class="shell">
+      <a class="legal-back" href="#tools" data-home-link>← Back to all tools</a>
+      <div class="legal-layout">
+        <header class="legal-heading">
+          <span class="label">Useful by design</span>
+          <h2>About Us</h2>
+          <p>Everyday Tools 2 is a focused collection of free utilities for quick, practical tasks.</p>
+        </header>
+        <div class="legal-copy">
+          <h2>Simple tools for everyday jobs</h2>
+          <p>Everyday Tools 2 brings four useful browser-based tools into one clean, easy-to-use website. There is no account requirement and the tools are free to use.</p>
+          <ul>
+            <li><strong>Unit Converter</strong> converts common length, weight, and temperature units.</li>
+            <li><strong>Age Calculator</strong> calculates a calendar-accurate age in years, months, and days.</li>
+            <li><strong>Color Picker</strong> lets you choose a color and copy its HEX or RGB code.</li>
+            <li><strong>JSON Formatter</strong> validates, formats, and minifies JSON text.</li>
+          </ul>
+
+          <h2>Why we built it</h2>
+          <p>Small online tasks should not require complicated software, sign-ups, or clutter. These utilities are designed to provide a clear answer quickly on both phones and computers.</p>
+
+          <h2>Contact</h2>
+          <p>Questions or feedback are welcome through the owner’s <a href="https://github.com/khuramshahzadmarar10-afk" target="_blank" rel="noopener noreferrer">GitHub profile</a>.</p>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <article class="legal-page" id="page-terms" data-page="terms" hidden>
+    <div class="shell">
+      <a class="legal-back" href="#tools" data-home-link>← Back to all tools</a>
+      <div class="legal-layout">
+        <header class="legal-heading">
+          <span class="label">Plain-language rules</span>
+          <h2>Terms of Use</h2>
+          <p>A short guide to using the free utilities on Everyday Tools 2.</p>
+        </header>
+        <div class="legal-copy">
+          <h2>Free access</h2>
+          <p>The Unit Converter, Age Calculator, Color Picker, and JSON Formatter are provided free of charge for personal, educational, and general-purpose use.</p>
+
+          <h2>Your responsibility</h2>
+          <p>Results are provided for convenience. You are responsible for checking whether a result is accurate and suitable before relying on it, especially for financial, legal, medical, engineering, safety-critical, or other consequential decisions.</p>
+
+          <h2>No guarantee</h2>
+          <p>The tools are provided “as is” without guarantees of uninterrupted availability or fitness for a particular purpose. To the extent permitted by law, the site owner is not responsible for loss or damage caused by relying on a tool result.</p>
+
+          <h2>Acceptable use</h2>
+          <p>Do not misuse the website, attempt to disrupt its operation, or use it in a way that violates applicable law.</p>
+
+          <h2>Contact</h2>
+          <p>Questions about these terms can be sent through <a href="https://github.com/khuramshahzadmarar10-afk" target="_blank" rel="noopener noreferrer">GitHub</a>.</p>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <footer>
+    <div class="shell footer-tools">
+      <h2>More Free Tools</h2>
+      <nav class="footer-tools-grid" aria-label="More free tools">
+        <a class="footer-tool" href="https://khuramshahzadmarar10-afk.github.io/islamic-tools/" target="_blank" rel="noopener noreferrer"><strong>NoorPulse (Islamic Tools)</strong><span>Prayer times, Qibla, Hijri calendar</span></a>
+        <a class="footer-tool" href="https://khuramshahzadmarar10-afk.github.io/pakistan-finance-hub/" target="_blank" rel="noopener noreferrer"><strong>FinPulse</strong><span>Finance calculators &amp; market rates</span></a>
+        <a class="footer-tool" href="https://khuramshahzadmarar10-afk.github.io/ai-era-tools/" target="_blank" rel="noopener noreferrer"><strong>AI Era Tools</strong><span>AI-powered utilities</span></a>
+        <a class="footer-tool" href="https://khuramshahzadmarar10-afk.github.io/student-tools/" target="_blank" rel="noopener noreferrer"><strong>Student Tools</strong><span>Study helpers &amp; calculators</span></a>
+        <a class="footer-tool" href="https://khuramshahzadmarar10-afk.github.io/health-calculators/" target="_blank" rel="noopener noreferrer"><strong>Health Calculators</strong><span>BMI, calories &amp; fitness tools</span></a>
+        <a class="footer-tool" href="https://khuramshahzadmarar10-afk.github.io/pdf-tools/" target="_blank" rel="noopener noreferrer"><strong>PDF Tools</strong><span>Merge, split, compress PDFs</span></a>
+      </nav>
+    </div>
+    <div class="shell footer-row"><span>© <span id="year"></span> Everyday Tools 2</span><nav aria-label="Footer navigation"><a href="#tools">All tools</a><a href="#faq">FAQ</a><a href="#workbench">Back to workbench</a><a href="#privacy" data-page-link="privacy">Privacy Policy</a><a href="#about" data-page-link="about">About Us</a><a href="#terms" data-page-link="terms">Terms of Use</a><a href="https://github.com/khuramshahzadmarar10-afk" target="_blank" rel="noopener noreferrer">Contact</a></nav></div>
+  </footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <aside class="cookie-notice" id="cookieNotice" role="region" aria-label="Cookie notice">
+    <p>We use cookies to improve your experience.</p>
+    <button type="button" id="cookieOk">OK</button>
+  </aside>
+
+  <script>
+    (function () {
+      "use strict";
+
+      var homeHero = document.getElementById("homeHero");
+      var homeContent = document.getElementById("homeContent");
+      var legalPages = Array.prototype.slice.call(document.querySelectorAll(".legal-page"));
+      var legalNames = ["privacy", "about", "terms"];
+      var defaultTitle = document.title;
+
+      function renderRoute() {
+        var route = window.location.hash.slice(1).toLowerCase();
+        var isLegal = legalNames.indexOf(route) !== -1;
+        homeHero.hidden = isLegal;
+        homeContent.hidden = isLegal;
+        legalPages.forEach(function (page) {
+          page.hidden = page.dataset.page !== route;
+        });
+        if (isLegal) {
+          var activePage = document.getElementById("page-" + route);
+          var heading = activePage.querySelector(".legal-heading h2").textContent;
+          document.title = heading + " — Everyday Tools 2";
+          requestAnimationFrame(function () { activePage.scrollIntoView({ block: "start" }); });
+        } else {
+          document.title = defaultTitle;
+          requestAnimationFrame(function () {
+            var target = route ? document.getElementById(route) : null;
+            if (target) target.scrollIntoView({ block: "start" });
+          });
+        }
+      }
+      document.querySelectorAll("[data-page-link]").forEach(function (link) {
+        link.addEventListener("click", function (event) {
+          event.preventDefault();
+          history.pushState(null, "", link.getAttribute("href"));
+          renderRoute();
+          setTimeout(function () {
+            window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+            document.documentElement.scrollTop = 0;
+            document.body.scrollTop = 0;
+          }, 0);
+        });
+      });
+      document.querySelectorAll("[data-home-link]").forEach(function (link) {
+        link.addEventListener("click", function (event) {
+          event.preventDefault();
+          history.pushState(null, "", "#tools");
+          renderRoute();
+        });
+      });
+      window.addEventListener("hashchange", renderRoute);
+      window.addEventListener("popstate", renderRoute);
+      renderRoute();
+
+      var tabs = Array.prototype.slice.call(document.querySelectorAll(".tab"));
+      var panels = Array.prototype.slice.call(document.querySelectorAll(".panel"));
+      var copyBlocks = ["unit", "age", "color", "json"];
+
+      function showTool(name, shouldScroll) {
+        tabs.forEach(function (tab) {
+          var active = tab.dataset.tab === name;
+          tab.setAttribute("aria-selected", active ? "true" : "false");
+          tab.tabIndex = active ? 0 : -1;
+        });
+        panels.forEach(function (panel) {
+          var active = panel.id === "panel-" + name;
+          panel.classList.toggle("active", active);
+          panel.hidden = !active;
+        });
+        copyBlocks.forEach(function (id) {
+          document.getElementById("copy-" + id).hidden = id !== name;
+        });
+        if (shouldScroll) document.getElementById("workbench").scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+
+      tabs.forEach(function (tab) {
+        tab.addEventListener("click", function () { showTool(tab.dataset.tab, false); });
+        tab.addEventListener("keydown", function (event) {
+          var index = tabs.indexOf(tab);
+          if (event.key === "ArrowRight" || event.key === "ArrowLeft") {
+            event.preventDefault();
+            var next = event.key === "ArrowRight" ? (index + 1) % tabs.length : (index - 1 + tabs.length) % tabs.length;
+            tabs[next].focus(); tabs[next].click();
+          }
+        });
+      });
+      document.querySelectorAll("[data-open]").forEach(function (button) {
+        button.addEventListener("click", function () { showTool(button.dataset.open, true); });
+      });
+
+      var unitData = {
+        length: {
+          units: { meter: ["Meters", 1], kilometer: ["Kilometers", 1000], centimeter: ["Centimeters", 0.01], millimeter: ["Millimeters", 0.001], mile: ["Miles", 1609.344], yard: ["Yards", 0.9144], foot: ["Feet", 0.3048], inch: ["Inches", 0.0254] },
+          defaults: ["kilometer", "mile"]
+        },
+        weight: {
+          units: { kilogram: ["Kilograms", 1], gram: ["Grams", 0.001], milligram: ["Milligrams", 0.000001], pound: ["Pounds", 0.45359237], ounce: ["Ounces", 0.028349523125], tonne: ["Metric tonnes", 1000] },
+          defaults: ["kilogram", "pound"]
+        },
+        temperature: {
+          units: { celsius: ["Celsius (°C)", null], fahrenheit: ["Fahrenheit (°F)", null], kelvin: ["Kelvin (K)", null] },
+          defaults: ["celsius", "fahrenheit"]
+        }
+      };
+      var currentCategory = "length";
+      var fromSelect = document.getElementById("unitFrom");
+      var toSelect = document.getElementById("unitTo");
+      var fromValue = document.getElementById("unitFromValue");
+      var toValue = document.getElementById("unitToValue");
+      var unitResult = document.getElementById("unitResult");
+
+      function fillUnitSelects() {
+        var data = unitData[currentCategory];
+        fromSelect.innerHTML = ""; toSelect.innerHTML = "";
+        Object.keys(data.units).forEach(function (key) {
+          var a = document.createElement("option"); a.value = key; a.textContent = data.units[key][0];
+          var b = a.cloneNode(true); fromSelect.appendChild(a); toSelect.appendChild(b);
+        });
+        fromSelect.value = data.defaults[0]; toSelect.value = data.defaults[1];
+        convertUnit();
+      }
+      function convertTemperature(value, from, to) {
+        var c;
+        if (from === "celsius") c = value;
+        else if (from === "fahrenheit") c = (value - 32) * 5 / 9;
+        else c = value - 273.15;
+        if (to === "celsius") return c;
+        if (to === "fahrenheit") return c * 9 / 5 + 32;
+        return c + 273.15;
+      }
+      function tidy(value) {
+        if (!Number.isFinite(value)) return "—";
+        var abs = Math.abs(value);
+        if (abs !== 0 && (abs >= 1000000000 || abs < 0.000001)) return value.toExponential(6);
+        return Number(value.toFixed(2)).toLocaleString(undefined, { maximumFractionDigits: 2 });
+      }
+      function convertUnit() {
+        var value = parseFloat(fromValue.value);
+        if (!Number.isFinite(value)) { toValue.value = ""; unitResult.textContent = "Enter a number"; return; }
+        var result;
+        if (currentCategory === "temperature") result = convertTemperature(value, fromSelect.value, toSelect.value);
+        else {
+          var units = unitData[currentCategory].units;
+          result = value * units[fromSelect.value][1] / units[toSelect.value][1];
+        }
+        var formatted = tidy(result);
+        toValue.value = formatted;
+        unitResult.textContent = tidy(value) + " " + unitData[currentCategory].units[fromSelect.value][0] + " = " + formatted + " " + unitData[currentCategory].units[toSelect.value][0];
+      }
+      document.querySelectorAll("#unitCategories .segment").forEach(function (button) {
+        button.addEventListener("click", function () {
+          document.querySelectorAll("#unitCategories .segment").forEach(function (b) { b.classList.remove("active"); });
+          button.classList.add("active"); currentCategory = button.dataset.category; fillUnitSelects();
+        });
+      });
+      [fromValue, fromSelect, toSelect].forEach(function (el) { el.addEventListener(el.tagName === "INPUT" ? "input" : "change", convertUnit); });
+      document.getElementById("swapUnits").addEventListener("click", function () {
+        var temp = fromSelect.value; fromSelect.value = toSelect.value; toSelect.value = temp;
+        if (toValue.value) fromValue.value = toValue.value.replace(/,/g, "");
+        convertUnit();
+      });
+      fillUnitSelects();
+
+      var birthInput = document.getElementById("birthDate");
+      var now = new Date();
+      var todayString = [now.getFullYear(), String(now.getMonth() + 1).padStart(2, "0"), String(now.getDate()).padStart(2, "0")].join("-");
+      birthInput.max = todayString;
+      function parseLocalDate(value) {
+        var p = value.split("-").map(Number);
+        return p.length === 3 ? new Date(p[0], p[1] - 1, p[2]) : null;
+      }
+      function calculateAge() {
+        var error = document.getElementById("ageError");
+        var results = document.getElementById("ageResults");
+        var birth = parseLocalDate(birthInput.value);
+        var today = new Date(); today.setHours(0,0,0,0);
+        error.textContent = "";
+        if (!birth || isNaN(birth.getTime())) { results.hidden = true; error.textContent = "Choose a valid date of birth."; return; }
+        if (birth > today) { results.hidden = true; error.textContent = "The date of birth cannot be in the future."; return; }
+        var years = today.getFullYear() - birth.getFullYear();
+        var months = today.getMonth() - birth.getMonth();
+        var days = today.getDate() - birth.getDate();
+        if (days < 0) {
+          months--;
+          var previousMonthDays = new Date(today.getFullYear(), today.getMonth(), 0).getDate();
+          days += previousMonthDays;
+        }
+        if (months < 0) { years--; months += 12; }
+        document.getElementById("ageYears").textContent = years;
+        document.getElementById("ageMonths").textContent = months;
+        document.getElementById("ageDays").textContent = days;
+        document.getElementById("ageNote").textContent = "Calculated through " + today.toLocaleDateString(undefined, { year: "numeric", month: "long", day: "numeric" }) + ".";
+        results.hidden = false;
+      }
+      document.getElementById("calculateAge").addEventListener("click", calculateAge);
+      birthInput.addEventListener("change", function () { if (birthInput.value) calculateAge(); });
+
+      var nativeColor = document.getElementById("nativeColor");
+      var colorPreview = document.getElementById("colorPreview");
+      var hexCode = document.getElementById("hexCode");
+      var rgbCode = document.getElementById("rgbCode");
+      function setColor(hex) {
+        var clean = hex.toUpperCase();
+        var match = /^#([0-9A-F]{6})$/.exec(clean);
+        if (!match) return false;
+        var number = parseInt(match[1], 16);
+        var r = (number >> 16) & 255, g = (number >> 8) & 255, b = number & 255;
+        nativeColor.value = clean.toLowerCase(); hexCode.value = clean; rgbCode.value = "rgb(" + r + ", " + g + ", " + b + ")";
+        colorPreview.style.backgroundColor = clean; return true;
+      }
+      nativeColor.addEventListener("input", function () { setColor(nativeColor.value); });
+      hexCode.addEventListener("input", function () {
+        var value = hexCode.value.trim(); if (value.charAt(0) !== "#") value = "#" + value;
+        if (setColor(value)) hexCode.setCustomValidity(""); else hexCode.setCustomValidity("Enter a six-digit HEX color such as #0F8B72");
+      });
+
+      var toastTimer;
+      function toast(message) {
+        var el = document.getElementById("toast"); el.textContent = message; el.classList.add("show");
+        clearTimeout(toastTimer); toastTimer = setTimeout(function () { el.classList.remove("show"); }, 1700);
+      }
+      function copyText(text, message) {
+        if (navigator.clipboard && window.isSecureContext) {
+          navigator.clipboard.writeText(text).then(function () { toast(message); }).catch(function () { fallbackCopy(text, message); });
+        } else fallbackCopy(text, message);
+      }
+      function fallbackCopy(text, message) {
+        var area = document.createElement("textarea"); area.value = text; area.style.position = "fixed"; area.style.opacity = "0"; document.body.appendChild(area); area.select();
+        try { document.execCommand("copy"); toast(message); } catch (e) { toast("Select the text and copy it manually"); }
+        area.remove();
+      }
+      document.querySelectorAll("[data-copy-target]").forEach(function (button) {
+        button.addEventListener("click", function () {
+          var input = document.getElementById(button.dataset.copyTarget); copyText(input.value, input.value + " copied");
+          document.getElementById("copyNote").textContent = input.value + " copied to clipboard.";
+          setTimeout(function () { document.getElementById("copyNote").textContent = ""; }, 2200);
+        });
+      });
+
+      var jsonInput = document.getElementById("jsonInput");
+      var jsonOutput = document.getElementById("jsonOutput");
+      var jsonStatus = document.getElementById("jsonStatus");
+      function processJson(minify) {
+        var raw = jsonInput.value.trim();
+        jsonOutput.classList.remove("output-invalid");
+        if (!raw) { jsonOutput.value = ""; jsonStatus.className = "status bad"; jsonStatus.textContent = "Paste some JSON first."; return; }
+        try {
+          var parsed = JSON.parse(raw);
+          jsonOutput.value = JSON.stringify(parsed, null, minify ? 0 : 2);
+          jsonStatus.className = "status good"; jsonStatus.textContent = minify ? "Valid JSON — minified successfully." : "Valid JSON — formatted successfully.";
+        } catch (error) {
+          jsonOutput.value = ""; jsonOutput.classList.add("output-invalid"); jsonStatus.className = "status bad"; jsonStatus.textContent = "Invalid JSON: " + error.message;
+        }
+      }
+      document.getElementById("formatJson").addEventListener("click", function () { processJson(false); });
+      document.getElementById("minifyJson").addEventListener("click", function () { processJson(true); });
+      document.getElementById("clearJson").addEventListener("click", function () { jsonInput.value = ""; jsonOutput.value = ""; jsonStatus.textContent = ""; jsonOutput.classList.remove("output-invalid"); jsonInput.focus(); });
+      document.getElementById("copyJson").addEventListener("click", function () { if (jsonOutput.value) copyText(jsonOutput.value, "Formatted JSON copied"); else toast("Nothing to copy yet"); });
+      jsonInput.addEventListener("keydown", function (event) {
+        if (event.key === "Tab") { event.preventDefault(); var start = jsonInput.selectionStart, end = jsonInput.selectionEnd; jsonInput.value = jsonInput.value.slice(0, start) + "  " + jsonInput.value.slice(end); jsonInput.selectionStart = jsonInput.selectionEnd = start + 2; }
+      });
+
+      var cookieNotice = document.getElementById("cookieNotice");
+      var cookieDismissed = false;
+      try { cookieDismissed = window.localStorage.getItem("cookieNoticeDismissed") === "1"; } catch (e) {}
+      if (cookieDismissed) cookieNotice.style.display = "none";
+      document.getElementById("cookieOk").addEventListener("click", function () {
+        cookieNotice.style.display = "none";
+        try { window.localStorage.setItem("cookieNoticeDismissed", "1"); } catch (e) {}
+      });
+
+      document.getElementById("year").textContent = new Date().getFullYear();
+    })();
+  </script>
+</body>
+</html>
